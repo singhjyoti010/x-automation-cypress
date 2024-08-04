@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2024-08-04T18:01:01.993Z",
-    "end": "2024-08-04T18:01:13.441Z",
-    "duration": 11448,
+    "start": "2024-08-04T18:13:45.895Z",
+    "end": "2024-08-04T18:13:57.356Z",
+    "duration": 11461,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e07a6941-df0a-4332-aaf6-3e88d8050fd2",
+      "uuid": "f24fce06-01b9-4aa8-b1f0-3150372dd611",
       "title": "",
       "fullFile": "cypress\\e2e\\login.cy.js",
       "file": "cypress\\e2e\\login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6a66204b-2d5f-475f-8ddd-dc0056c81dc8",
+          "uuid": "a0e8255f-c3d9-4e7f-bad1-d1169557c08a",
           "title": "User login",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,21 @@
               "title": "login user with valid credentials",
               "fullTitle": "User login login user with valid credentials",
               "timedOut": null,
-              "duration": 11413,
+              "duration": 11426,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "await cy.visit('https://x.com/');\nawait cy.get('[data-testid=\"xMigrationBottomBar\"]', {\n  timeout: 20000\n}).should('be.visible').click();\nawait cy.get('[data-testid=\"loginButton\"] > .css-146c3p1').click();\nawait cy.get('.r-1roi411 > :nth-child(1) > .r-16y2uox', {\n  timeout: 5000\n}).should('be.visible'); //wait for login page to load\nawait cy.get('input[autocomplete=\"username\"]').type(\"testid.jyoti8@gmail.com\");\nawait cy.xpath('//*[text()=\"Next\"]//ancestor::button').click();\nif (await cy.get('[data-testid=\"ocfEnterTextTextInput\"]').then($el => {\n  Cypress.dom.isVisible($el); // true\n})) {\n  await cy.get('[data-testid=\"ocfEnterTextTextInput\"]').type('Testid738071');\n  await cy.get('[data-testid=\"ocfEnterTextNextButton\"]').click();\n}\nawait cy.xpath('//*[contains(@name,\"password\")]').type(\"India@123\");\nawait cy.get('button[data-testid=\"LoginForm_Login_Button\"]').click();\nawait cy.wait(50000);",
+              "code": "await cy.visit('https://x.com/');\nawait cy.get('[data-testid=\"xMigrationBottomBar\"]', {\n  timeout: 20000\n}).should('be.visible').click();\nawait cy.get('[data-testid=\"loginButton\"] > .css-146c3p1').click();\nawait cy.get('.r-1roi411 > :nth-child(1) > .r-16y2uox', {\n  timeout: 5000\n}).should('be.visible'); //wait for login page to load\nawait cy.get('input[autocomplete=\"username\"]').type(\"testid.jyoti8@gmail.com\");\nawait cy.xpath('//*[text()=\"Next\"]//ancestor::button').click();\nif (await cy.get('[data-testid=\"ocfEnterTextTextInput\"]').then($el => {\n  Cypress.dom.isVisible($el); // true\n})) {\n  await cy.get('[data-testid=\"ocfEnterTextTextInput\"]').type('Testid738071');\n  await cy.get('[data-testid=\"ocfEnterTextNextButton\"]').click();\n}\nawait cy.xpath('//*[contains(@name,\"password\")]').type('India@123');\nawait cy.get('button[data-testid=\"LoginForm_Login_Button\"]').click();\nawait cy.wait(50000);",
               "err": {
                 "message": "CypressError: Cypress test was stopped while running this command.",
                 "estack": "CypressError: Cypress test was stopped while running this command.\n    at cypressErr (https://x.com/__cypress/runner/cypress_runner.js:76024:18)\n    at Object.errByPath (https://x.com/__cypress/runner/cypress_runner.js:76078:10)\n    at https://x.com/__cypress/runner/cypress_runner.js:145922:72",
                 "diff": null
               },
-              "uuid": "7d066b3c-9e7b-4b52-83fe-b3f5e970f30c",
-              "parentUUID": "6a66204b-2d5f-475f-8ddd-dc0056c81dc8",
+              "uuid": "65a972f3-6196-455a-a569-154fcfaeae2c",
+              "parentUUID": "a0e8255f-c3d9-4e7f-bad1-d1169557c08a",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "7d066b3c-9e7b-4b52-83fe-b3f5e970f30c"
+            "65a972f3-6196-455a-a569-154fcfaeae2c"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 11413,
+          "duration": 11426,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
