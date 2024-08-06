@@ -11,7 +11,7 @@ export class LoginPage {
         await click(loginPageHooks.signinBtn);
         await cy.get(loginPageHooks.loginDialog, {timeout: 7000}).should('be.visible'); //waits for login dialog to show up
         await type(loginPageHooks.emailInput, Cypress.env('loginEmail'));
-        await cy.xpath('//*[text()="Next"]//ancestor::button').click();
+        await cy.xpath(loginPageHooks.nextBtn).click();
         if( await cy.get(loginPageHooks.confirmAccountPopUp).then(($el) => {
             Cypress.dom.isVisible($el) // true
           })){
