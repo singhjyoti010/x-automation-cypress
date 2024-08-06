@@ -19,4 +19,5 @@ module.exports = defineConfig({
     html: false,
     json: true,
   },
+  // defaultCommandTimeout: 30000,
 });
