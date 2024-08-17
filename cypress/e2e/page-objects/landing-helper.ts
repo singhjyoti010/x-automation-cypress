@@ -1,10 +1,11 @@
 import { mainBlockHooks } from "../hooks/landingPageHooks";
+import { type, clickWxPath } from "../page-objects/event-helpers";
 
 export class LandingPage {
     createPost() {
-        cy.xpath(mainBlockHooks.txtFld).type("Hi there people!");
-        cy.xpath(mainBlockHooks.whoCanReply).click();
-        cy.xpath(mainBlockHooks.accountsYouFollow).click();
-        cy.xpath(mainBlockHooks.postBtn).click();
+        type(mainBlockHooks.txtFld, "Hi there people!");
+        clickWxPath(mainBlockHooks.whoCanReply);
+        clickWxPath(mainBlockHooks.accountsYouFollow);
+        clickWxPath(mainBlockHooks.postBtn);
     }
 }

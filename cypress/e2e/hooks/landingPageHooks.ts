@@ -19,7 +19,7 @@ export const mainBlockHooks = {
     forYou: '//*[contains(text(),"For you")]/ancestor::a',      //For you section
     following: '//*[contains(text(),"Following")]/ancestor::a',     //Following section
     /****************************************Create new post hooks********************************************** */
-    txtFld: '//*[contains(@data-testid,"tweetTextarea_0RichTextInputContain")]//span/span',     //textbox for post
+    txtFld: '.public-DraftStyleDefault-block',     //textbox for post
     whoCanReply: '//*[contains(@aria-label, "reply")]',     //who all can reply to post
     photoVideo: '//*[contains(@aria-label, "Add photos or video")]',        //attach photo or video button
     addgif: '//*[contains(@aria-label, "GIF")]',        //add GIF button
