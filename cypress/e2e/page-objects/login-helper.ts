@@ -1,4 +1,4 @@
-import { loginPageHooks } from "../hooks/loginPageHook";
+import { loginPageHooks } from "../hooks/loginPageHooks";
 import { typeWxPath } from "./event-helpers";
 import { click, clickWxPath, type } from "./event-helpers";
 
