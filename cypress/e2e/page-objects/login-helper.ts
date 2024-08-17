@@ -1,4 +1,4 @@
-import { loginPageHooks } from "../hooks/loginPageHook";
+import { loginPageHooks } from "../hooks/loginPageHooks";
 import { typeWxPath } from "./event-helpers";
 import { click, clickWxPath, type } from "./event-helpers";
 
@@ -21,6 +21,6 @@ export class LoginPage {
         typeWxPath(loginPageHooks.passwordInput, Cypress.env('loginPassword'));
         click(loginPageHooks.loginBtn);
         cy.get('.public-DraftEditorPlaceholder-root', {timeout: 20000}).should('be.visible');
-        cy.wait(50000);
+        // cy.wait(50000);
     }
 }
