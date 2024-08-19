@@ -11,12 +11,16 @@ export class LoginPage {
         cy.get(loginPageHooks.loginDialog, {timeout: 7000}).should('be.visible'); //waits for login dialog to show up
         type(loginPageHooks.emailInput, Cypress.env('loginEmail'));
         clickWxPath(loginPageHooks.nextBtn);
-        if(cy.get(loginPageHooks.confirmAccountPopUp)
-                    .then(($el) => {
-            Cypress.dom.isVisible($el) // true
-          })){
-            type(loginPageHooks.userNameInput, Cypress.env('loginUsername'));
-            click('[data-testid="ocfEnterTextNextButton"]')
+        try{
+            if(cy.get(loginPageHooks.confirmAccountPopUp)
+                .then(($el) => {
+                Cypress.dom.isVisible($el) // true
+            })){
+                type(loginPageHooks.userNameInput, Cypress.env('loginUsername'));
+                click('[data-testid="ocfEnterTextNextButton"]');
+            }
+        } catch (e) {
+            console.log(`confirm account popup with selector ${loginPageHooks.confirmAccountPopUp} is not visible`);
         }
         typeWxPath(loginPageHooks.passwordInput, Cypress.env('loginPassword'));
         click(loginPageHooks.loginBtn);
