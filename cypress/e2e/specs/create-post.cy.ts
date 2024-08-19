@@ -1,5 +1,5 @@
-import { LandingPage } from "./page-objects/landing-helper";
-import { LoginPage } from "./page-objects/login-helper";
+import { LandingPage } from "../page-objects/landing-helper";
+import { LoginPage } from "../page-objects/login-helper";
 
 const landingPage = new LandingPage();
 const loginPage = new LoginPage();
