@@ -11,6 +11,7 @@ module.exports = defineConfig({
       return config;
     },
     baseUrl: "https://x.com/",
+    specPattern: 'cypress/e2e/specs/*.cy.ts'
   },
   reporter: 'mochawesome',
   reporterOptions: {

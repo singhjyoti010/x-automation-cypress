@@ -1,4 +1,4 @@
-import { LoginPage } from "./page-objects/login-helper";
+import { LoginPage } from "../page-objects/login-helper";
 
 const loginPage = new LoginPage();
 
