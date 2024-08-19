@@ -6,6 +6,6 @@ export const loginPageHooks = {
     nextBtn: '//*[text()="Next"]//ancestor::button',        //Next button
     confirmAccountPopUp: '[data-testid="ocfEnterTextTextInput"]',       //Intermittent, account confirmation pop-out
     userNameInput: '[data-testid="ocfEnterTextTextInput"]',     //username text field
-    passwordInput: '//*[contains(@name,"password")]',       //passwrod text field
+    passwordInput: '//*[contains(@name,"password")]',       //password text field
     loginBtn: 'button[data-testid="LoginForm_Login_Button"]'        //login button
 }
