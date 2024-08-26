@@ -2,8 +2,11 @@
     "compilerOptions": {
       "target": "es5",
       "lib": ["es5", "dom"],
+      "moduleResolution": "node16",
       "types": ["cypress", "node"],
+      "module": "Node16", 
+      "esModuleInterop": true,
       "baseUrl": "/"
     },
-    "include": ["**/*.ts"]
+    "include": ["**/*.ts", "cypress/**/*.feature"]
 }
