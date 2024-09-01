@@ -59,6 +59,10 @@ Add below to your package.json file
 "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
  }
+"cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinations": true,
+    "stepDefinitions": "cypress/e2e/step-definations/*.ts"
+  },
 ```
 
 ## Dir structure
