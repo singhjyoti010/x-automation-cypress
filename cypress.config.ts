@@ -27,6 +27,11 @@ module.exports = defineConfig({
     baseUrl: "https://x.com/",
     // specPattern: 'cypress/e2e/specs/*.cy.ts'
     specPattern: '**/*.feature',
+    supportFile: false,
+    cucumber: {
+      stepDefinitions: 'cypress/e2e/features/step-defination/**/*.ts',
+      //C:\Users\jyoti\Documents\Dev\x-automation-cypress\cypress\e2e\features\step-defination\first.ts
+    }
   },
   reporter: 'mochawesome',
   reporterOptions: {
