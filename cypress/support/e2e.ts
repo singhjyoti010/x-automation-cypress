@@ -19,3 +19,6 @@ import 'cypress-xpath';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+
+//now we can use cy.getDataTest('Fundamental-test').should('be.visible')
